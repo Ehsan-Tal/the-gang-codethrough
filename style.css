@@ -8,13 +8,22 @@ body {
 font-weight: 800;
 font-size: 50px;
 }
+.h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
 .h3 {
-
+font-weight: bold;
+font-size: 30px;
 }
 .h4 {
 font-weight: bold;
 font-size: 20px;
-
+}
+.p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
 }
 .wrapper {
 width: 960px;
@@ -44,25 +53,26 @@ margin: 0 auto;
 .character1{
     background: url(characters/ghost-guy.png) no-repeat 0 0;
     background-size: 100%;
-    width:363px;
-    height:344px;
-    position: absolute; top: 117px; right: 89px;
+    width:363px;    height:389px;
+    position: absolute; 
+    top: 117px; right: 89px;
     transform: rotate(15deg);
 }
 .character2{
     background: url(characters/circle-guy.png) no-repeat 0 0;
     background-size: 100%;
-    width: 309px;
-    height: 371px;
-    position: absolute; top: 213px; right: 277px;
+    width: 309px;    height: 371px;
+    position: absolute;     
+    top: 220px;
+    right: 447px;
 
 }
 .character3 {
     background: url(characters/floating-plant-guy.png) no-repeat 0 0;
     background-size: 100%;
-    width: 297px;
-    height: 286px;
-    position: absolute; bottom:74px; right: 109px;
+    width: 297px;    height: 286px;
+    position: absolute; bottom:74px; right: 300px;
+    transform: rotate(270deg);
 
 }
 a.cta,
@@ -83,22 +93,73 @@ button.cta.alt{
     color: #111111;
     box-shadow: 0 0 0 10px rgba(0,0,0,0.15);
 }
+
+nav {
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+}
+nav .logo {
+    display:block;
+    width:300px;
+    height: 40px;
+    position: absolute; top: 50%; left: 0;
+    margin-top: -20px;
+    margin-left: 30px;
+    background: url(characters/eish-guy.png) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+nav ul {
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+nav ul li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+    padding:35px 10px;
+    line-height: 30px;
+}
+.more-info{
+    text-align: center;
+}
+.more-info p {
+    margin: 18px 0 35px;
+}
+.more-info h2{
+    margin: 50px 0 0;
+}
+.highlight {
+    background-color: #ffadf9;
+    color: #ff3300;
+    padding: 5px 10px;
+    display: inline;
+    line-height: 10px;
+    font-weight: 800;
+}
+
 /*
-<div class="hero-banner">
-        <div class="wrapper">
-            <h4> <a href="https://google.com">Ehi</a> from his ripped chair</h4>
-            <h1>
-                The Silliest &amp;<br>
-                Most Awesome Gang<br>
-                In The World !
-            </h1>
-            <h3> It's a circle &amp; two triangles. <br>
-                They're friends I guess ?
-            </h3>
-            <a class="cta alt" href="#more-info">Read More</a>
-        </div>
-        <div class="character1"></div>
-        <div class="character2"></div>
-        <div class="character3"></div>
-    </div>
+    <nav>
+        <a href="#" class="logo">The Gang</a>
+        <ul>
+            <li><a href="#sign-up">Sign up</a></li>  
+            <li><a href="#story">The Story</a></li> 
+            <li><a href="#more-info">More info</a></li>                 
+        </ul>
+    </nav>
 */
