@@ -37,10 +37,10 @@
         <div class="wrapper">
             <h2>Join Our Pyramid Scheme</h2>
             <p>Every week, <span class="highlight">7 days</span> happen.</p>
-            <button class="cta">Sign me up, please.</button>
+            <button class="cta" onclick=ShowPopup()>Sign me up, please.</button>
         </div>
     </div>
-    <div class="sep"></div>
+    <div class="sep" id="story"></div>
     <div class="story" id="story">
         <ul class="nb-list">
            <li class="blue"> Rock 'n' Roll </li>
@@ -60,31 +60,38 @@
     <footer>
 
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="blanket"></div>
         <div class="content">
             <h2> Fill in your details</h2>
             <form action="">
-                <div class="item">
-                    <label for =""> Your First Name</label>
-                    <input type="text" placeholder="Awesomeface" value="Shirley"> 
-                </div>
-                <div class="item">
-                    <label for =""> Your Last Name</label>
-                    <input type="text" placeholder="Bin Laden" value="Shirley"> 
-                </div>
-                <div class="item">
-                    <label for =""> Your Favourite food</label>
-                    <input type="text" placeholder="Pink" value="Shirley"> 
-                </div>
-                <div class="item">
-                    <label for =""> Your Favourite Food</label>
-                    <input type="text" placeholder="Balklava" value="Shirley"> 
-                </div>
+                <row>
+                    <div class="item">
+                        <label for =""> Your First Name</label>
+                        <input type="text" placeholder="Awesomeface" value="Bob"> 
+                    </div>
+                    
+                    <div class="item">
+                        <label for =""> Your Last Name</label>
+                        <input type="text" placeholder="Bin Laden" value="your Uncle"> 
+                    </div>
+                </row>
+                
+                <row>
+                    <div class="item">
+                        <label for =""> Your Favourite food</label>
+                        <input type="text" placeholder="Pink" value="Pink"> 
+                    </div>
+                    <div class="item">
+                        <label for =""> Your Favourite Food</label>
+                        <input type="text" placeholder="Balklava" value="Boiled Egg"> 
+                    </div>
+                </row>
+                <button class="cta">I want in !</button>
             </form>
-            <button class="close">Close</button>
+            <button class="close" onclick=HidePopup()>Close</button>
         </div>
     </div>
-
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
